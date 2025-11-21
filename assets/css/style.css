@@ -430,6 +430,28 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
   color: #d1b06b;
 }
 
+
+
+.luxury-button2 a {
+  display: inline-block;
+  background: #d1b06b;
+  padding: 5px 20px ;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: "Cormorant Garamond";
+  position: relative;
+  z-index: 1;
+  border: 1px solid #d1b06b;
+  transition: 0.5s;
+}
+
+.luxury-button2 a:hover {
+  color: #d1b06b;
+  background-color: white;
+}
+
 .luxury-button a:before {
   position: absolute;
   content: "";
@@ -1206,6 +1228,7 @@ p.section-desc-2 {
 <!-- ===================-->*/
 .facilities-area {
   padding: 109px 0 87px;
+  padding-bottom: 0;
 }
 
 .facilities-area .section-title {
@@ -1220,20 +1243,21 @@ p.section-desc-2 {
 .facilities-area .luxury-button:before {
   right: -295px;
   background: #1e1e1e;
+  display: none;
 }
 
 .facilities-area .luxury-button a {
-  color: #1e1e1e;
-  border: 1px solid #1e1e1e;
+  color: white;
+  /* border: 1px solid #1e1e1e; */
   background: transparent;
 }
 
 .facilities-area .luxury-button a:before {
-  background: #1e1e1e;
+  background: white;
 }
 
 .facilities-area .luxury-button a:hover {
-  color: #fff;
+  color: #d1b06b;
 }
 
 .facilities-area .row.add-boder {
@@ -3575,6 +3599,7 @@ a.dark-logo {
   left: 13%;
   top: 19px;
   margin: auto;
+display: none;
 }
 
 .home-three.facilities-area .section-title.center h4:after {
@@ -3582,6 +3607,7 @@ a.dark-logo {
   left: 10%;
   top: 16px;
   margin: auto;
+display: none;
 }
 
 .home-three .single-facilities-box {
@@ -7080,13 +7106,16 @@ a.dark-logo {
 <!--Start Breadcumb Area-->
 <!-- ========================================-->*/
 .breadcumb-area {
-  background: url("/assets/images/uniglo-images/banners/4c\'s-banner.jpg");
+  background: url("/assets/images/uniglo-images/banners/banner_2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 260px 0 170px;
   text-align: center;
 }
+
+
+
 
 .breadcum-title h4 {
   font-size: 60px;
@@ -10021,7 +10050,13 @@ background-position: center left calc(50% - 190px);
 
 
 .breadcum-title h4{
-  text-align: left;
+  text-align: right;
+  color: white;
  
 }
 
+@media (max-width: 768px) {
+  .left-buttons {
+    display: none !important;
+  }
+}
