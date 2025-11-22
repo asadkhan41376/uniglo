@@ -263,7 +263,7 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
    <!--Uniglo Hero Area Css-->
 ==================================---*/
 .hero-area {
-  background: url(../images/uniglo-images/banners/header-diamonds-2.png);
+  background: url(../images/uniglo-images/banners/banner_3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -273,7 +273,14 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
 }
 
 .hero-area.style-two {
-  background: url(../images/uniglo-images/banners/header-diamonds-2.png);
+    background: url(../images/uniglo-images/banners/banner_4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 101vh;
+  text-align: center;
+  position: relative;
+
 }
 
 .hotel-rating ul li {
@@ -429,7 +436,22 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
 .luxury-button a:hover {
   color: #d1b06b;
 }
+.luxury-button a:before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  background: #fff;
+  z-index: -1;
+  transition: 0.5s;
+}
 
+.luxury-button a:hover:before {
+  width: 100%;
+  left: 0;
+}
 
 
 .luxury-button2 a {
@@ -448,11 +470,13 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
 }
 
 .luxury-button2 a:hover {
-  color: #d1b06b;
+  color: #012549;
   background-color: white;
 }
 
-.luxury-button a:before {
+
+
+.luxury-button2 a:before {
   position: absolute;
   content: "";
   width: 0;
@@ -464,7 +488,7 @@ li.sub-menu-style-two:hover ul.sub-menu-two {
   transition: 0.5s;
 }
 
-.luxury-button a:hover:before {
+.luxury-button2 a:hover:before {
   width: 100%;
   left: 0;
 }
@@ -5757,18 +5781,23 @@ display: none;
 .home-five .single-blog-box.upper:before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: 55%;
   height: 100%;
   left: 0;
   top: 0;
-  background: url(../images/home5/blog-2.jpg);
+  background: url("/assets/images/uniglo-images/pages/home/blog_2.jpg");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
   z-index: -1;
 }
 
 .single-blog-box.upper.two:before {
-  background: url(../images/home5/blog-3.jpg);
+  background: url("/assets/images/uniglo-images/pages/home/blog_3.JPG");
   background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
 }
 
 .home-five .blog-content.upper {
@@ -7210,7 +7239,7 @@ display: none;
 /*call-do-action-inner*/
 .inner.call-do-action-area {
   background-color: #1e1e1e;
-  padding: 124px 0 124px;
+  padding: 50px 0 50px;
 }
 
 .inner.call-do-action-area .row.call-do-action-bg {
@@ -10059,4 +10088,73 @@ background-position: center left calc(50% - 190px);
   .left-buttons {
     display: none !important;
   }
+}
+
+
+.lacated_area{
+  font-size: 80px;
+  line-height: 60px;
+}
+
+.QuatArea{
+  /* min-height: 80vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuatArea h2{
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.history_Video{
+  /* width: 100%; */
+  height: 500px;
+  /* background: #000; */
+}
+
+.history_Video video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-thumb{
+  position: relative;
+  z-index: 2;
+}
+.about-thumb::after{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 25%;
+  height: 80%;
+  background-color: #d1b06b;
+  z-index: -1;
+
+}
+
+.about-thumb::before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 25%;
+  height: 80%;
+  background-color: #2E3947;
+  z-index: -1;
+
+}
+
+
+.custom_bg{
+  background-image: url("/assets/images/uniglo-images/pages/home/diamond_bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  box-shadow: 2px 2px 20px #000000b5;
+  padding: 50px;
 }
