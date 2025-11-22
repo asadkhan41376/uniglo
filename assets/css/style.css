@@ -10149,7 +10149,7 @@ background-position: center left calc(50% - 190px);
 }
 
 
-.custom_bg{
+/* .custom_bg{
   background-image: url("/assets/images/uniglo-images/pages/home/diamond_bg.jpg");
   background-position: center top;
   background-size: cover;
@@ -10157,4 +10157,4 @@ background-position: center left calc(50% - 190px);
   border-radius: 100px;
   box-shadow: 2px 2px 20px #000000b5;
   padding: 50px;
-}
+} */
