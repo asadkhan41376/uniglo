@@ -10129,7 +10129,7 @@ background-position: center left calc(50% - 190px);
   position: absolute;
   top: -20px;
   left: -20px;
-  width: 25%;
+  width: 20%;
   height: 80%;
   background-color: #d1b06b;
   z-index: -1;
@@ -10140,7 +10140,7 @@ background-position: center left calc(50% - 190px);
   content: "";
   position: absolute;
   bottom: -20px;
-  right: -20px;
+  right: 70px;
   width: 25%;
   height: 80%;
   background-color: #2E3947;
@@ -10158,3 +10158,14 @@ background-position: center left calc(50% - 190px);
   box-shadow: 2px 2px 20px #000000b5;
   padding: 50px;
 } */
+
+
+
+
+.facilities-thumb img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;   /* desktop image control */
+  border-radius: 10px;
+}
