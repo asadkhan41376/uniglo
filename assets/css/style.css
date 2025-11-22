@@ -5781,7 +5781,7 @@ display: none;
 .home-five .single-blog-box.upper:before {
   position: absolute;
   content: "";
-  width: 55%;
+  width: 50%;
   height: 100%;
   left: 0;
   top: 0;
