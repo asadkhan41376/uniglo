@@ -38,6 +38,12 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 /*---=================================
    <!--Uniglo Header Area Css-->
 ==================================---*/
+
+body{
+  position: relative;
+  height: 100vh;
+}
+
 .header-area {
   padding: 0 34px;
   position: relative;
@@ -51,6 +57,9 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
   border: 1px solid rgba(255, 255, 255, 0.549);
   border-left: 0;
   border-right: 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
 }
 
 .header-menu ul li {
@@ -1596,12 +1605,17 @@ a.facilities-button i:hover {
 }
 
 .single-blog-thumb {
+  width: 356px;
+  height: 235px;
   overflow: hidden;
+
 }
 
 .single-blog-thumb img {
   width: 100%;
+  height: 100%;
   transition: 0.5s;
+  object-fit: cover;
 }
 
 .single-blog-box:hover .single-blog-thumb img {
@@ -1885,6 +1899,9 @@ a.facilities-button i:hover {
 <!-- ==================================================================-->
 <!--Home Two Area-->
 <!-- ==================================================================-->*/
+
+
+
 
 .home-two.header-menu ul li {
   display: inline-block;
@@ -3420,6 +3437,16 @@ a.dark-logo {
   width: 100%;
 }
 
+.offer-thumb{
+  overflow: hidden;
+  
+}
+
+.offer-thumb:hover img{
+  transition: all 2s ease-in-out ;
+  scale: 1.1;
+}
+
 .home-three .offer {
   position: absolute;
   top: 37px;
@@ -3643,6 +3670,7 @@ display: none;
   margin: 0;
   z-index: 1;
   margin-bottom: 22px;
+  min-height: 351px;
 }
 
 .home-three .single-facilities-box:before {
@@ -4554,7 +4582,7 @@ display: none;
 
 .home-four .offer-content {
   position: absolute;
-  bottom: -370px;
+  bottom: -390px;
   left: 0;
   right: 0;
   background: #fff;
@@ -5177,7 +5205,7 @@ display: none;
 <!--Start About Area  Home Five-->
 <!-- =======================-========->*/
 .home-five.about-area {
-  padding: 124px 0 125px;
+  padding: 124px 0 0;
 }
 
 .home-five .about-thumb {
@@ -5254,8 +5282,8 @@ display: none;
 /*====Home Five Section title====*/
 .home-five .section-title h4 {
   font-size: 16px;
-  font-weight: 400;
-  font-family: "Lora";
+  font-weight: 600;
+  /* font-family: "Lora"; */
   margin-bottom: -8px;
   color: #d1b06b;
 }
@@ -5810,7 +5838,7 @@ display: none;
 <!--Start Gallery Area  Home Five-->
 <!-- ========================================-->*/
 .home-five.gallery-area {
-  padding: 107px 0 125px;
+  padding: 107px 0 0;
 }
 
 .home-five.gallery-area .section-title.center {
@@ -6328,11 +6356,21 @@ display: none;
 
 .home-six .section-title p {
   opacity: 0.851;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 30px;
   color: #616161;
   width: 95%;
+  /* font-weight: ; */
   margin: 13px 0 0;
+}
+
+.home-six .section-title ul li {
+  opacity: 0.851;
+  font-size: 15px;
+
+  color: white;
+
+  /* font-weight: ; */
 }
 
 .home-six .section-title.content p {
@@ -6358,9 +6396,14 @@ display: none;
 <!--Start Location Area  Home Six-->
 <!-- ========================================-->*/
 .home-six.location-area {
-  background-color: #f8f8f8;
-  padding: 102px 0 125px;
+  background-color: #2E3947;
+  padding: 12px 0 80px;
   position: relative;
+  background: url("/assets/images/uniglo-images/pages/service/manufacter_prosecc.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+
+  background-size: cover;
 }
 
 .home-six.location-area:before {
@@ -6368,9 +6411,8 @@ display: none;
   content: "";
   width: 100%;
   height: 100%;
-  left: -40px;
+  left: 0;
   top: 0;
-  background: url(../images/home6/location-img.jpg);
   background-repeat: no-repeat;
 }
 
@@ -6382,6 +6424,11 @@ display: none;
   position: relative;
   z-index: 1;
   padding-left: 80px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+background-color: #00000014;
+padding: 10px;
+border-radius: 10px;
 }
 
 .home-six .location-text {
@@ -6396,9 +6443,9 @@ display: none;
   font-size: 450px;
   line-height: 32px;
   font-weight: 500;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   color: transparent;
-  -webkit-text-stroke-color: #222;
+  -webkit-text-stroke-color: #d1b06b;
   font-family: "Cormorant Garamond";
   text-transform: uppercase;
 }
@@ -6408,8 +6455,11 @@ display: none;
 <!--Start gallery Area  Home Six-->
 <!-- ========================================-->*/
 .home-six.gallery-area {
-  padding: 102px 0 125px;
+  padding: 10px 0 42px;
   position: relative;
+  background:#2E3947;
+  
+
 }
 
 .home-six.gallery-area:before {
@@ -6417,9 +6467,12 @@ display: none;
   content: "";
   width: 100%;
   height: 100%;
-  right: -49%;
+  right: 0%;
   top: 0;
-  background: url(../images/home6/gallery-bg.jpg);
+  background: url("/assets/images/uniglo-images/pages/service/wyChoosus.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 
@@ -6431,6 +6484,11 @@ display: none;
   position: relative;
   z-index: 1;
   padding-right: 80px;
+   -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+background-color: #00000014;
+padding: 10px;
+border-radius: 10px;
 }
 
 .home-six .gallery-text {
@@ -6445,9 +6503,9 @@ display: none;
   font-size: 450px;
   line-height: 32px;
   font-weight: 500;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 2px;
   color: transparent;
-  -webkit-text-stroke-color: #222;
+  -webkit-text-stroke-color: #d1b06b;
   font-family: "Cormorant Garamond";
   text-transform: uppercase;
 }
@@ -10028,7 +10086,7 @@ span.flaticon-multiply i {
 
 .facilities-icon svg{
   fill: #d1b06b;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .certificat_image{
@@ -10123,6 +10181,21 @@ background-position: center left calc(50% - 190px);
 .about-thumb{
   position: relative;
   z-index: 2;
+  width: 520px;
+  height: 415px;
+  background-color: rebeccapurple;
+  
+
+}
+
+.about-thumb img{
+ 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position:  center;
+
+
 }
 .about-thumb::after{
   content: "";
@@ -10169,3 +10242,104 @@ background-position: center left calc(50% - 190px);
   max-height: 500px;   /* desktop image control */
   border-radius: 10px;
 }
+
+
+
+@media (min-width: 1921px) {
+ .about-thumb{
+  position: relative;
+  z-index: 2;
+}
+.about-thumb::after{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 20%;
+  height: 80%;
+  background-color: #d1b06b;
+  z-index: -1;
+
+}
+
+.about-thumb::before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 70px;
+  width: 25%;
+  height: 80%;
+  background-color: #2E3947;
+  z-index: -1;
+
+}
+
+
+}
+
+
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+.home-six.gallery-area {
+  padding: 10px 0 0px;
+  position: relative;
+  background:#2E3947;
+
+}
+
+.home-six.location-area {
+  background-color: #2E3947;
+  padding: 12px 0 40px;
+  position: relative;
+}
+
+  .about-thumb{
+  position: relative;
+  z-index: 2;
+}
+.about-thumb::after{
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 20%;
+  height: 80%;
+  background-color: #d1b06b;
+  z-index: -1;
+
+}
+
+.about-thumb::before{
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 25%;
+  height: 80%;
+  background-color: #2E3947;
+  z-index: -1;
+
+}
+}
+
+
+
+.parallax-cta {
+  background-image: url('/assets/images/uniglo-images/banners/banner_2.jpg'); /* Change image */
+  height: 400px;
+  background-attachment: fixed; /* Parallax effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
