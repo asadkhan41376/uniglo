@@ -6473,7 +6473,7 @@ border-radius: 10px;
 
 /* Feature cards */
 .feature-card {
-      -webkit-backdrop-filter: blur(10px);
+      /* -webkit-backdrop-filter: blur(10px); */
   backdrop-filter: blur(10px);
   box-shadow: 1px 1px 5px #d1b06b;
 /* background-color: #00000014;  */
