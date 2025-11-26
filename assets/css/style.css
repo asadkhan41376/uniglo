@@ -6455,14 +6455,13 @@ border-radius: 10px;
 .home-six.gallery-area {
   /* padding: 10px 0 42px; */
   position: relative;
-  background:#2E3947;
+  /* background:#2E3947; */
 }
 .features-row{
   margin-top: 50px;
 }
 /* Feature rows */
 .features-row {
- 
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -6473,8 +6472,9 @@ border-radius: 10px;
 
 /* Feature cards */
 .feature-card {
-      -webkit-backdrop-filter: blur(10px);
+  background: transparent;
   backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
   box-shadow: 1px 1px 5px #d1b06b;
     padding: 10px;
     width: 300px;
