@@ -6473,10 +6473,9 @@ border-radius: 10px;
 
 /* Feature cards */
 .feature-card {
-      /* -webkit-backdrop-filter: blur(10px); */
+      -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 1px 1px 5px #d1b06b;
-/* background-color: #00000014;  */
     padding: 10px;
     width: 300px;
     border-radius: 10px; /* Oval shape */
@@ -6502,6 +6501,9 @@ border-radius: 10px;
     .feature-card {
         width: 90%;
         border-radius: 30px;
+           -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: 1px 1px 5px #d1b06b;
     }
 }
 
